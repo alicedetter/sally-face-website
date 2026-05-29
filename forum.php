@@ -2,14 +2,13 @@
 <?php require_once("asset.php"); ?> <!-- connects to sql -->
 
 <?php
-//?
 $sql = "SELECT tbl_post.*, tbl_user.username FROM tbl_post JOIN tbl_user ON tbl_post.user_id = tbl_user.id ORDER BY tbl_post.created DESC";
 $result = mysqli_query($conn, $sql);
 
-$mess=""; //?
+$mess="";
 if(isset($_SESSION['mess'])){
     $mess=$_SESSION['mess'];
-    unset($_SESSION['mess']); //?
+    unset($_SESSION['mess']);
 }else{
     $mess="";
 }
@@ -18,6 +17,18 @@ if(isset($_GET['del'])){
     $sql = "DELETE FROM tbl_post WHERE id=$id";
     $result = mysqli_query($conn, $sql);
     header("Location: forum.php");
+}
+if(isset($_GET['like'])){
+    $post_id = intval($_GET['like']);
+    $user_id = $_SESSION['id'];
+    $sql = "SELECT * FROM tbl_like WHERE user_id=$user_id AND post_id=$post_id";
+    $result = mysqli_query($conn, $sql);
+    if(mysqli_num_rows($result) == 0){
+        $sql = "INSERT INTO tbl_like(user_id, post_id) VALUES ($user_id, $post_id)";
+        mysqli_query($conn, $sql);
+    }
+    header("Location: forum.php");
+    exit();
 }
 
 ?>
@@ -37,6 +48,10 @@ if(isset($_GET['del'])){
         <main class="main1">
             <div class="forum_posts">
                 <?php while ($row = mysqli_fetch_assoc($result)){ ?>
+                    <?php
+                    $sql2 = "SELECT COUNT(*) AS likes FROM tbl_like WHERE post_id=".$row['id'];
+                    $result2 = mysqli_query($conn, $sql2);
+                    $likes = mysqli_fetch_assoc($result2); ?>
                     <div class="post">
                         <h2><?php echo $row['title']; ?></h2>
                         <p><?php echo $row['content']; ?></p>
@@ -44,9 +59,15 @@ if(isset($_GET['del'])){
                         <p class="username"><?php echo $row['username'];?></p>
                         <div>
                             <small><?php echo $row['created']; ?></small>
-                        <?php if (isLevel(100)): ?>
-                            <a href="forum.php?del=<?=$row['id']?>" class="deleteButton">Delete</a>
-                        <?php endif; ?>
+                            <div class="DelAndLike">
+                                <p><?php echo $likes['likes']; ?> likes</p>
+                                <?php if (isLevel(50)): ?>
+                                    <a href="forum.php?like=<?=$row['id']?>">Like</a>
+                                <?php endif; ?>
+                                <?php if (isLevel(100)): ?>
+                                    <a href="forum.php?del=<?=$row['id']?>" class="deleteButton">Delete</a>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                 <?php } ?>

@@ -548,6 +548,16 @@ details{
     width:1rem;
     color:#753335;
 }
+.DelAndLike{
+    display:flex;
+    gap:0.5rem;
+}
+.DelAndLike a{
+    color:white;
+}
+.DelAndLike a:hover{
+    color:#a8a8a8;
+}
 @media screen and (min-height: 1180px){
     dialog form{
         width:280px;
