@@ -10,7 +10,7 @@ Om man trycker på login får man fram ett formulär för att logga in.
 
 Om man istället trycker på register får man upp ett formulär för att registrera sig. När formuläret skickas in får man ett meddelande om att man först måste bli accepterad av admin för att kunna logga in. Man kan inte heller använda ett användarnamn som redan finns.
 
-Om man trycker på Shop kommer man till butiken där det finns merch att köpa, det går dock inte att faktiskt lägga sakerna i en kundvagn (skriv något om varför alla är likadana?). 
+Om man trycker på Shop kommer man till butiken där det finns merch att köpa, det går dock inte att faktiskt lägga sakerna i en kundvagn.
 
 Om man trycker på Forum kommer man till ett forum där man kan lägga ut inlägg också med ett formulär, men bara om man är inloggad. Sedan kan man se alla inlägg där och se vem som lade upp dem och när. Man kan också gilla inläggen och se hur många likes ett inlägg har, man kan inte gilla ett inlägg mer än en gång och man kan bara gilla ett inlägg om man är inloggad.
 
