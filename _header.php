@@ -12,8 +12,7 @@
         <?php endif; ?>
         <?php if(!empty($mess)): ?>
         <p id="message">
-            <?=$mess;?>
-            <button onclick="closeMessage()" class="close-btn">X</button>
+            <?=$mess;?>&nbsp;<button onclick="closeMessage()" class="close-btn">X</button>
         </p>
         <?php endif; ?>
     </div>

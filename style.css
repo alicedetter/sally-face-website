@@ -26,26 +26,20 @@ a:hover{
     gap:12rem;
     display:flex;
     flex-direction: column;
-    --background-color: #753335;
-    --background-image: url(logonew.jpg);
     background-size: cover;
     flex-grow:10;
     height:100dvh;
-    --justify-content: center;
     align-items: center;
 }
 .main2{
     gap:5rem;
     display:flex;
     flex-direction: column;
-    --background-color: #753335;
-    --background-image: url(logonew.jpg);
     background-size: cover;
     flex-grow:10;
     height:100dvh;
-    --justify-content: center;
     align-items: center;
-    /*how can i make a gap between the bottom products and the footer?*/
+    margin-bottom: 1rem;
 }
 body{
     height:100dvh;
@@ -61,7 +55,11 @@ body{
     overflow-y:scroll;
     overflow-x:hidden;
     width:100%;
-    background-image:url(logonewest.jpg);
+    background-image:url(sflogo.jpg);
+    background-size: cover;
+    background-position:center;
+    padding-bottom: 1rem;
+
 }
 header{
     display:flex;
@@ -72,7 +70,6 @@ header{
     justify-content:space-between;
     position:relative;
     font-size:2rem;
-    --gap:2rem;
     padding:0 2rem;
     box-shadow: 0px 10px 40px black;
 }
@@ -84,8 +81,6 @@ footer{
     align-items:center;
     justify-content: center;
     display:flex;
-    --padding:10px;
-    --gap:5px;
     border-top: 1px solid rgba(54, 23, 23, 0.2);
     height:3rem;
     font-size:1.5rem;
@@ -101,7 +96,6 @@ footer{
     font-size:3rem;
 }
 .rightlinks a{
-    text-decoration:none;
     color:black;
 }
 .rightlinks a:hover{
@@ -112,14 +106,19 @@ footer{
     display:flex;
 }
 .leftlink button{
-    width:3.8rem;
+    width:fit-content;
     height:2rem;
     font-size:1.8rem;
+    padding:0.3rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 .leftlink{
     display:flex;
     flex-direction:row;
     gap:1rem;
+    width:300px;
 }
 button:hover{
     background: #4c2123;
@@ -136,10 +135,10 @@ button:hover{
     border-radius:0.4rem;
     justify-content: center;
     display:flex;
+    align-items:center;
 }
 .logout a{
     color:#753335;
-    text-decoration: none;
 }
 .logout:hover{
     background: #4c2123;
@@ -150,7 +149,10 @@ button:hover{
     font-size:1.5rem;
 }
 #message{
+    display:flex;
+    flex-direction: row;
     font-size:1.3rem;
+    width:200px;
 }
 #login{
     border:none;
@@ -160,8 +162,6 @@ dialog{
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
-    --width:100%;
-    --height:100dvh;
     border:none;
     background: #0003;
     backdrop-filter: blur(5px);
@@ -195,7 +195,6 @@ nav{
     align-items:center;
 }
 nav a{
-    text-decoration:none;
     color:#753335;
     margin-left:0.5rem;
 }
@@ -242,7 +241,7 @@ button{
 .productbg1{
     width:100%;
     height:100%;
-    background-image: url(tempmerch.webp);
+    background-image: url(merch.webp);
     background-size: cover;
     border-radius:10px 10px 0px 0px;
 }
@@ -251,49 +250,49 @@ button{
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg3{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg4{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg5{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg6{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg7{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .productbg8{
     width:100%;
     height:100%;
     background-size: cover;
     border-radius:10px 10px 0px 0px;
-    background-image:url(tempmerch.webp);
+    background-image:url(merch.webp);
 }
 .price{
     background: #ffffff;
@@ -340,6 +339,7 @@ button{
     align-items:center;
     justify-content:center;
     padding:1rem;
+    height:fit-content;
 }
 .box div:last-child{
     background: #000;
@@ -352,13 +352,19 @@ button{
     align-items:center;
     --justify-content:center;
     padding:1rem;
-    height:12rem;
+    height:fit-content;
 }
 .PostForm{
     display:flex;
     flex-direction:column;
     gap:0.5rem;
     padding:1rem;
+    background: #000;
+    color:white;
+    border-radius:0.5rem;
+}
+.PostForm input, .PostForm textarea{
+    color:black;
 }
 .PostFormContainer{
     display:flex;
@@ -419,7 +425,6 @@ button{
 }
 .deleteButton{
     color:white;
-    text-decoration:none;
 }
 .deleteButton:hover{
     color:#a8a8a8;
@@ -477,7 +482,6 @@ details{
     justify-content:space-between;
 }
 .buttons a{
-    text-decoration:none;
     color:white;
 }
 .buttons a:hover{
@@ -487,13 +491,16 @@ details{
     background: black;
     color:#753335;
     border:none;
-    width:5rem;
+    --width:5rem;
     height:2rem;
     font-size:1.8rem;
     font-family: 'Boopee Regular', sans-serif;
     border-radius:0.4rem;
     justify-content: center;
     display:flex;
+    width:fit-content;
+    padding:0.3rem;
+    align-items:center;
 }
 .reg a{
     color:#753335;
@@ -527,4 +534,301 @@ details{
     color:#ffffff;
     margin-top:4rem;
 }
-/* get rid of text decorations if it works*/
+.closeLogin{
+    margin-left:200px;
+    width:2rem;
+    height:2rem;
+    font-size:1.8rem;
+    position:fixed;
+    margin-bottom:125px;
+}
+.spacer{
+    height:0.5rem;
+    font-size:0.1rem;
+    width:1rem;
+    color:#753335;
+}
+@media screen and (min-height: 1180px){
+    dialog form{
+        width:280px;
+        height:230px;
+    }
+    .closeLogin{
+        margin-left:230px;
+        margin-bottom:155px;
+    }
+    dialog form label{
+        font-size:2rem;
+    }
+    dialog form input{
+        font-size:1.1rem;
+    }
+    .registerform{
+        width:25rem;
+        height:25rem;
+        font-size:2rem;
+    }
+    .registerform input{
+        font-size:1.4rem;
+    }
+}
+@media screen and (max-width: 1030px){
+    .product{
+        width:13rem;
+        height:13rem;
+    }
+    .main3{
+        gap:6rem;
+    }
+    .ExistingUserSummary, .RequestedUserSummary{
+        width:23rem;
+        font-size:2rem;
+    }
+    .RequestedUsers h1, .ExistingUsers h1{
+        font-size:3rem;
+    }
+    .RequestedUsers details div, .ExistingUsers details div{
+        font-size:2rem;
+    }
+    .box div:first-child, .box div:last-child{
+        width:25rem;
+    }
+    .rightlinks{
+        gap:0.5rem;
+    }
+    header{
+        padding:0.5rem;
+    }
+    .title{
+        font-size:2.4rem;
+    }
+}
+@media screen and (max-width: 860px){
+    .leftlink button{
+        width:3rem;
+        font-size:1.6rem;
+    }
+    .rightlinks a{
+        font-size:1.6rem;
+    }
+    .reg{
+        font-size:1.6rem;
+    }
+    .box div:first-child, .box div:last-child{
+        width:22rem;
+    }
+    .product{
+        width:11rem;
+        height:11rem;
+    }
+    .main3{
+        gap:3rem;
+    }
+    .ExistingUserSummary, .RequestedUserSummary{
+        width:19rem;
+        font-size:1.9rem;
+    }
+    .RequestedUsers h1, .ExistingUsers h1{
+        font-size:2.5rem;
+    }
+    .RequestedUsers details div, .ExistingUsers details div{
+        font-size:1.8rem;
+    }
+    .title{
+        font-size:2rem;
+    }
+    .rightlinks{
+        gap:0.4rem;
+    }
+    header{
+        padding:0.5rem;
+    }
+}
+@media screen and (max-width: 545px){
+    .box div:first-child, .box div:last-child{
+        width:14rem;
+    }
+    .box{
+        gap:2rem;
+    }
+    .p1{
+        width:31rem;
+    }
+    .p2{
+        width:28rem;
+    }
+    .FrontMessage{
+        width:31rem;
+        font-size:4rem;
+    }
+    .title{
+        font-size:1.8rem;
+    }
+    .leftlink button{
+        width:2.5rem;
+        font-size:1.3rem;
+    }
+    .reg{
+        font-size:1.3rem;
+    }
+    header{
+        padding:1rem;
+    }
+    .rightlinks{
+        gap:0.4rem;
+    }
+    .rightlinks a{
+        font-size:1.5rem;
+    }
+    .products{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:5rem;
+    }
+    .main3{
+        gap:2rem;
+    }
+    .ExistingUserSummary, .RequestedUserSummary{
+        width:14rem;
+        font-size:1.8rem;
+    }
+    .RequestedUsers h1, .ExistingUsers h1{
+        font-size:2rem;
+    }
+    .RequestedUsers details div, .ExistingUsers details div{
+        font-size:1.2rem;
+    }
+    .title{
+        font-size:1.4rem;
+    }
+    .rightlinks{
+        gap:0.4rem;
+    }
+    .rightlinks a{
+        font-size:1.1rem;
+    }
+    header{
+        padding:0.4rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .box div:first-child, .box div:last-child{
+        width:22rem;
+    }
+    .box{
+        flex-direction:column;
+        gap:0.8rem;
+    }
+    .p1{
+        width:22rem;
+    }
+    .p2{
+        width:21rem;
+    }
+    .welcome{
+        width:22rem;
+        font-size:2.6rem;
+    }
+    .FrontMessage{
+        width:22rem;
+        font-size:3rem;
+    }
+    .title{
+        font-size:1.3rem;
+    }
+    .leftlink button{
+        font-size:0.9rem;
+        width:1.8rem;
+    }
+    .leftlink{
+        gap:0.5rem;
+    }
+    .reg{
+        font-size:1.1rem;
+        width:3rem;
+    }
+    header{
+        padding:0.5rem;
+    }
+    .rightlinks{
+        gap:0.2rem;
+    }
+    .rightlinks a{
+        font-size:1rem;
+    }
+    .products{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:5rem;
+    }
+    .success{
+        width:20rem;
+        font-size:2.5rem;
+    }
+    .successinfo{
+        width:14rem;
+    }
+    .main3{
+        gap:1rem;
+    }
+    .ExistingUserSummary, .RequestedUserSummary{
+        width:10rem;
+        font-size:1.2rem;
+    }
+    .RequestedUsers h1, .ExistingUsers h1{
+        font-size:2rem;
+    }
+    .RequestedUsers details div, .ExistingUsers details div{
+        font-size:1.1rem;
+    }
+    footer{
+        font-size:1.2rem;
+    }
+    .rightlinks a{
+        font-size:0.8rem;
+    }
+    .title{
+        font-size:1.2rem;
+    }
+    .logout{
+        width:3rem;
+        font-size:1.1rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .main3{
+        gap:1rem;
+    }
+    .ExistingUserSummary, .RequestedUserSummary{
+        width:9rem;
+        font-size:1.2rem;
+    }
+    .RequestedUsers h1, .ExistingUsers h1{
+        font-size:1.8rem;
+    }
+    .RequestedUsers details div, .ExistingUsers details div{
+        font-size:1rem;
+    }
+    footer{
+        font-size:1.2rem;
+    }
+    .FrontMessage{
+        width:20rem;
+        font-size:2.8rem;
+    }
+    .welcome{
+        width:20rem;
+        font-size:2.3rem;
+    }
+    .p1{
+        width:20rem;
+    }
+    .p2{
+        width:19rem;
+    }
+    .box div:first-child, .box div:last-child{
+        width:20rem;
+    }
+}

@@ -39,8 +39,8 @@ if(isset($_SESSION['mess'])){
                     <p>So basically if you would like to know what the news are they are basically that basically if you want to know. So that is what it is, and something happened tomorrow, yes and we are shocked. We don't know what we are talking about, but something needs to be written here. Great, this was the news, have a good day!</p>
                 </div>
                 <div>
-                    <h1>something?</h1>
-                    <p>Maybe this is upcoming events or something like that im honestly not quite sure right now. I'm simply writing to fill this space but we'll see what's here in the future.</p>
+                    <h1>Important information</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis nulla consequatur. Veritatis fugit corporis cupiditate? Laboriosam et eaque fuga sint impedit eveniet, vel officiis iure exercitationem veritatis error?</p>
                 </div>
             </div>
         </main>

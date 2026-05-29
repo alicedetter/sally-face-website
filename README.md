@@ -2,4 +2,18 @@
 slut-projekt
 funktioner och användning
 
-På framsidan står det mest bara text, det finns inga speciella funktioner förutom vid header där man kan trycka på Login, Register, Home, Shop eller Forum. Om man trycker på login får man fram ett formulär för att logga in. Om man istället trycker på register får man upp ett formulär för att registrera sig. När formuläret skickas in får man ett meddelande om att man först måste bli accepterad av admin för att kunna logga in. Om man trycker på Shop kommer man till butiken där det finns merch att köpa, det går dock inte att faktiskt lägga sakerna i en kundvagn (skriv något om varför alla är likadana?). Om man trycker på Forum kommer man till ett forum där man kan lägga ut inlägg också med ett formulär, men bara om man är inloggad. Sedan kan man se alla inlägg där och se vem som lade upp dem och när. Om man loggar in och är en admin kan man också se User Admin på header. Om man trycker på den kommer man till en sida där det finns redan existerande användare och de som har förfrågat om att skapa ett konto. Man kan antingen klicka accept eller deny på de som har förfrågat och om man klickar accept får de leveln 50 och om man klickar deny raderas dem. På de redan existerande användarna kan man klicka promote, demote eller ban, promote gör att leveln går upp 50, demote gör så leveln går ner 50 och ban gör så att kontot raderas. Som admin när man är inne på forum ser man också en knapp för att radera inlägg.
+Denna webbsida är inspirerad av spelet "Sally Face" och kulten som finns i spelet. Om kulten hade en webbsida så är det så här jag tror att den skulle se ut.
+
+På framsidan står det mest bara text, det finns inga speciella funktioner förutom vid header där man kan trycka på Login, Register, Home, Shop eller Forum. 
+
+Om man trycker på login får man fram ett formulär för att logga in. 
+
+Om man istället trycker på register får man upp ett formulär för att registrera sig. När formuläret skickas in får man ett meddelande om att man först måste bli accepterad av admin för att kunna logga in. Man kan inte heller använda ett användarnamn som redan finns.
+
+Om man trycker på Shop kommer man till butiken där det finns merch att köpa, det går dock inte att faktiskt lägga sakerna i en kundvagn (skriv något om varför alla är likadana?). 
+
+Om man trycker på Forum kommer man till ett forum där man kan lägga ut inlägg också med ett formulär, men bara om man är inloggad. Sedan kan man se alla inlägg där och se vem som lade upp dem och när. 
+
+Om man loggar in och är en admin (level 100) kan man också se User Admin på header. Om man trycker på den kommer man till en sida där det finns redan existerande användare och de som har förfrågat om att skapa ett konto. Man kan antingen klicka accept eller deny på de som har förfrågat och om man klickar accept får de leveln 50 och om man klickar deny raderas dem. På de redan existerande användarna kan man klicka promote, demote eller ban, promote gör att leveln går upp 50, demote gör så leveln går ner 50 och ban gör så att kontot raderas. Som admin när man är inne på forum ser man också en knapp för att radera inlägg.
+
+Jag har också gjort webbsidan mestadels responsiv genom att göra många ändringar beroende på olika storlekar på skärmen, alltså för olika mobiler och sådant.

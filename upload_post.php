@@ -45,9 +45,9 @@ if(isset($_SESSION['mess'])){
             <div class="PostFormContainer">
                 <form action="upload_post.php" method="POST" enctype="multipart/form-data" class="PostForm">
                     <label for="title">Write a title</label>
-                    <input type="text" name="title">
+                    <input type="text" name="title" placeholder="Title" required>
                     <label for="content">Write your post</label>
-                    <textarea name="content" rows="6"></textarea>
+                    <textarea name="content" rows="6" placeholder="Content" required></textarea>
                     <label for="image">Add an image (optional)</label>
                     <input type="file" name="image">
                     <input type="submit" name="btn_post" value="Post">
@@ -66,7 +66,6 @@ if(isset($_SESSION['mess'])){
             <input type="text" name="user" placeholder="Username" required>
             <label for="pass">Password</label>
             <input type="password" name="pass" placeholder="Password" required>
-            <!--input type="submit" name="btn_login" value="Log in"-->
             <button name="btn_login" >Log in</button>
             
         </form>

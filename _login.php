@@ -2,10 +2,6 @@
 require_once("asset.php");
 
 if(isset($_GET['logout'])){
-    /*$_SESSION['mess']="Logged out!";
-    $_SESSION['username']="";
-    $_SESSION['level']="";
-    $_SESSION['id']="";*/
     session_start();
     session_unset();
     session_destroy();

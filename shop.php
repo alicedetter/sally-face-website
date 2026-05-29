@@ -66,6 +66,7 @@ if(isset($_SESSION['mess'])){
                     <div class="price"><p>25$</p></div>
                 </div>
             </div>
+            <div class="spacer">h</div>
         </main>
     </div>
     <footer>
@@ -78,7 +79,6 @@ if(isset($_SESSION['mess'])){
             <input type="text" name="user" placeholder="Username" required>
             <label for="pass">Password</label>
             <input type="password" name="pass" placeholder="Password" required>
-            <!--input type="submit" name="btn_login" value="Log in"-->
             <button name="btn_login" class="loginbutton">Login</button>
         </form>
     </dialog>
